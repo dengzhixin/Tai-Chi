@@ -67,6 +67,7 @@ let step = function () {
       html.innerHTML = string2
       n++
       html.scroll(0, 999999)
+      window.scroll(0, 999999)
 
       step()
     }
