@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+    />
+    <title>画个太极</title>
+  </head>
+  <body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <div id="div"></div>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: white;
+        background: #1e1e1e;
+      }
+      #html {
+        padding: 20px;
+        word-break: break-all;
+      }
+      #div {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 1s;
+      }
+
+      @media (max-width: 500px) {
+        #html {
+          height: calc(100vh - 220px);
+          overflow: auto;
+        }
+        #div {
+          position: relative;
+          top: 0;
+          padding: 20px;
+        }
+      }
+    </style>
+    <script src="main.js"></script>
+  </body>
+</html>
